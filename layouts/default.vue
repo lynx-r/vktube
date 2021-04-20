@@ -1,8 +1,10 @@
 <template>
-  <div class="container mx-auto flex flex-col h-full">
+  <div class="flex flex-col h-full">
     <Header />
     <main class="flex-grow">
-      <Nuxt />
+      <Drawer>
+        <Nuxt />
+      </Drawer>
     </main>
     <Footer />
   </div>

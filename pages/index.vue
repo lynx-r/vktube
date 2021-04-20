@@ -1,9 +1,7 @@
 <template>
-  <div class="container">
-    <div>
-      <h1 class="title">youtube-clone</h1>
-      <div class="links">text</div>
-    </div>
+  <div>
+    <h1 class="title">youtube-clone</h1>
+    <div class="links">text</div>
   </div>
 </template>
 

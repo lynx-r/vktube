@@ -1,5 +1,8 @@
 <template>
-  <header>Header</header>
+  <header class="flex">
+    <button @click="$accessor.sidebar.toggle()">Show sidebar</button>
+    <div>Header</div>
+  </header>
 </template>
 
 <script>
