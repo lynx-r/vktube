@@ -2,9 +2,9 @@
   <div class="flex flex-col h-full">
     <Header />
     <main class="flex-grow">
-      <Drawer>
+      <Sidebar>
         <Nuxt />
-      </Drawer>
+      </Sidebar>
     </main>
     <Footer />
   </div>

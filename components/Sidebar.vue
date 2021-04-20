@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: 'Drawer',
+  name: 'Sidebar',
 
   computed: {
     opened() {
