@@ -1,7 +1,6 @@
 <template>
   <div>
-    <h1 class="title">youtube-clone</h1>
-    <div class="links">text</div>
+    <RecommendedVideos />
   </div>
 </template>
 
