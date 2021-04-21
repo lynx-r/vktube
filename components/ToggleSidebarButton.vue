@@ -1,6 +1,6 @@
 <template>
   <Button @click="$accessor.sidebar.toggle()">
-    <SidebarIcon />
+    <fa :icon="['fa', 'bars']" />
   </Button>
 </template>
 <script>
