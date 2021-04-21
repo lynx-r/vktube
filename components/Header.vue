@@ -1,5 +1,5 @@
 <template>
-  <header class="flex justify-between">
+  <header class="flex justify-between p-4 mb-10 bg-gray-50 shadow">
     <div class="flex">
       <ToggleSidebarButton />
       <div>YouTube Clone</div>
