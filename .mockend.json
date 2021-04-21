@@ -9,5 +9,13 @@
   "Comment": {
     "body": "string",
     "post": "Post"
+  },
+  "Video": {
+    "title": "string",
+    "preview": "string",
+    "views": "int",
+    "published": "boolean",
+    "createdAt": "date",
+    "comments": "Comment[]"
   }
 }

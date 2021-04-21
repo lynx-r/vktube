@@ -38,6 +38,7 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    '@nuxtjs/universal-storage',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -72,5 +73,11 @@ export default {
       ],
       brands: ['faYoutube'],
     },
+  },
+
+  publicRuntimeConfig: {
+    vkClientId: process.env.VK_CLIENT_ID,
+    vkAuthCallback: process.env.VK_AUTH_CALLBACK,
+    vkScope: process.env.VK_SCOPE,
   },
 }
