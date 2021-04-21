@@ -7,11 +7,7 @@
 </template>
 
 <script>
-import BrandAndSidebarToggle from '~/components/BrandAndSidebarToggle'
-// import { faGithub } from '@fortawesome/free-brands-svg-icons'
-
 export default {
   name: 'Header',
-  components: { BrandAndSidebarToggle},
 }
 </script>

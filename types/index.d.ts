@@ -1,8 +1,10 @@
+import { vkApi } from '~/plugins/vk-api'
 import { accessorType } from '~/store'
 
 declare module 'vue/types/vue' {
   interface Vue {
     $accessor: typeof accessorType
+    $vkApi: typeof vkApi
   }
 }
 

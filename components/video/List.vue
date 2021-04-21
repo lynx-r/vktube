@@ -1,22 +1,19 @@
 <template>
   <div>
-    <VideoCard v-for="video of videos" :key="video.id" :video="video" />
+    <div>Найдено всего видео: {{ videos.count }}</div>
+    <VideoCard v-for="item of videos.items" :key="item.id" :video="item" />
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import { SearchResult } from '~/plugins/vk-api/repo/VideoRepository'
+
 export default {
   name: 'List',
-  data() {
-    return {
-      videos: [
-        {
-          id: 1,
-          title: 'Video',
-          url: 'http://url',
-        },
-      ],
-    }
+  computed: {
+    videos() {
+      return this.$accessor.search.searchResult as SearchResult
+    },
   },
 }
 </script>

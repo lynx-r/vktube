@@ -2,6 +2,7 @@ import { getAccessorType, mutationTree, actionTree } from 'typed-vuex'
 // import { Context } from '@nuxt/types'
 
 import * as sidebar from './sidebar'
+import * as search from './search'
 
 export const state = () => ({
   email: '',
@@ -42,5 +43,6 @@ export const accessorType = getAccessorType({
   state,
   modules: {
     sidebar,
+    search,
   },
 })
