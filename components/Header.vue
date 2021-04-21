@@ -4,7 +4,7 @@
       <ToggleSidebarButton />
       <Brand />
     </div>
-    <SearchInput />
+    <SearchInput class="w-1/3" />
     <AccountBox />
   </header>
 </template>
