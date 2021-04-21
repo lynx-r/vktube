@@ -59,7 +59,17 @@ export default {
   fontawesome: {
     component: 'fa',
     icons: {
-      solid: ['faCog', 'faHome', 'faBars', 'faSearch'],
+      solid: [
+        'faCog',
+        'faHome',
+        'faBars',
+        'faSearch',
+        'faVideo',
+        'faPlus',
+        'faSquare',
+        'faBell',
+        'faCircle',
+      ],
       brands: ['faYoutube'],
     },
   },

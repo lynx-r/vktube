@@ -1,11 +1,13 @@
 <template>
   <div>
-    <input id="input" ref="input" type="text" class="rounded pr-9 w-full" />
-    <fa
-      icon="search"
-      class="relative text-gray-500 -top-28px right-12px float-right cursor-pointer"
-      @click="$refs.input.focus()"
-    />
+    <div class="w-full relative">
+      <input id="input" ref="input" type="text" class="rounded pr-9 w-full" />
+      <fa
+        icon="search"
+        class="absolute text-gray-500 cursor-pointer right-3 bottom-3"
+        @click="$refs.input.focus()"
+      />
+    </div>
   </div>
 </template>
 

@@ -1,20 +1,17 @@
 <template>
-  <header class="flex justify-between p-4 mb-10 h-72px bg-gray-50 shadow">
-    <div class="flex space-x-4">
-      <ToggleSidebarButton />
-      <Brand />
-    </div>
+  <header class="flex justify-between items-center p-4 mb-10 bg-gray-50 shadow">
+    <BrandAndSidebarToggle />
     <SearchInput class="w-1/3" />
     <AccountBox />
   </header>
 </template>
 
 <script>
+import BrandAndSidebarToggle from '~/components/BrandAndSidebarToggle'
 // import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import ToggleSidebarButton from '~/components/ToggleSidebarButton'
 
 export default {
   name: 'Header',
-  components: { ToggleSidebarButton },
+  components: { BrandAndSidebarToggle},
 }
 </script>

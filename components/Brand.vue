@@ -1,5 +1,8 @@
 <template>
-  <NuxtLink class="text-3xl font-semibold text-red-500 flex space-x-2" to="/">
+  <NuxtLink
+    class="text-3xl font-semibold text-red-500 flex items-center space-x-2"
+    to="/"
+  >
     <div>
       <fa :icon="['fab', 'youtube']" />
     </div>
