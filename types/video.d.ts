@@ -5,5 +5,6 @@ declare module 'vkontakte-api' {
   export interface IVideo {
     image: IImage[]
     subsitle: string
+    contentRestricted: 0 | 1
   }
 }

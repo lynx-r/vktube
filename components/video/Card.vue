@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>{{ title }}</div>
-    <!--    <video-player :options="playerOptions" />-->
+    <video-player :options="playerOptions" />
   </div>
 </template>
 
@@ -22,23 +22,23 @@ export default Vue.extend({
     title(): string {
       return this.video.title || this.video.subsitle
     },
-    imageUrl(): string {
+    poster(): string {
       return this.video?.image[0]?.url
     },
     player(): string {
       return this.video.player
     },
-    // playerOptions() {
-    //   return {
-    //     controls: true,
-    //     poster: this.imageUrl,
-    //     src: {
-    //       withCredentials: false,
-    //       type: 'application/x-mpegurl',
-    //       src: this.player,
-    //     },
-    //   }
-    // },
+    playerOptions(): Object {
+      return {
+        controls: true,
+        poster: this.poster,
+        controlBar: {
+          timeDivider: false,
+          durationDisplay: false,
+        },
+        sources: [{ src: this.player, type: 'video/mp4' }],
+      }
+    },
   },
 })
 </script>
