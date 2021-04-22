@@ -1,17 +1,17 @@
 <template>
   <div class="flex space-x-2">
-    <DefaultButtonIcon>
+    <AppButtonIcon>
       <FaVideoPlus />
-    </DefaultButtonIcon>
-    <DefaultButtonIcon>
+    </AppButtonIcon>
+    <AppButtonIcon>
       <FaApps />
-    </DefaultButtonIcon>
-    <DefaultButtonIcon>
+    </AppButtonIcon>
+    <AppButtonIcon>
       <fa icon="bell" class="text-gray-500" />
-    </DefaultButtonIcon>
-    <DefaultButtonIcon class="rounded-full bg-red-500 text-gray-100">
+    </AppButtonIcon>
+    <AppButtonIcon class="rounded-full bg-red-500 text-gray-100">
       AP
-    </DefaultButtonIcon>
+    </AppButtonIcon>
   </div>
 </template>
 

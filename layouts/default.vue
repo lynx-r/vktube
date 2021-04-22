@@ -1,12 +1,12 @@
 <template>
   <div class="flex flex-col h-full">
-    <DefaultHeader />
+    <AppHeader />
     <main class="flex-grow">
-      <DefaultSidebar>
+      <AppSidebar>
         <Nuxt />
-      </DefaultSidebar>
+      </AppSidebar>
     </main>
-    <DefaultFooter />
+    <AppFooter />
   </div>
 </template>
 

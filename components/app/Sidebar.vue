@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: 'DefaultSidebar',
+  name: 'AppSidebar',
 
   computed: {
     opened() {

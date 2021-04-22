@@ -1,6 +1,6 @@
 <template>
   <button
-    class="font-bold py-2 px-4 text-white"
+    class="font-bold py-2 px-2 text-2xl border-none"
     :class="btnClass"
     @click="$emit('click', $event)"
   >
@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'DefaultButton',
+  name: 'AppButtonIcon',
   props: {
     round: {
       type: Boolean,
@@ -18,7 +18,7 @@ export default {
     },
     type: {
       type: String,
-      default: 'primary',
+      default: 'fill',
     },
     text: {
       type: String,
