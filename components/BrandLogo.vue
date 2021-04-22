@@ -13,6 +13,6 @@
 
 <script>
 export default {
-  name: 'Brand',
+  name: 'BrandLogo',
 }
 </script>

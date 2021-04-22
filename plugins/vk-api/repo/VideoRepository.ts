@@ -8,8 +8,9 @@ export interface SearchParams {
   sort?: 0 | 1 | 2
   hd?: number
   adult?: boolean
-  filters?: string[]
+  filters?: string
   searchOwn?: boolean
+  extended?: boolean
 }
 
 export interface SearchResult {
@@ -25,5 +26,13 @@ export class VideoRepository extends Repository {
   /**
    * @see https://vk.com/dev/wall.post
    */
-  search = this.r<SearchParams, SearchResult>('search')
+  search = this.r<SearchParams, SearchResult>(
+    'search',
+    ({ filters = 'mp4', searchOwn = false, sort = 2, ...rest }) => ({
+      filters,
+      searchOwn,
+      sort,
+      ...rest,
+    })
+  )
 }

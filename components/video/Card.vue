@@ -1,33 +1,44 @@
 <template>
   <div>
-    {{ subtitle }}
-    <!--    <video width="320" height="240" controls>-->
-    <!--      <source :src="player" type='video/mp4' />-->
-    <!--    </video>-->
-    <img :src="imageUrl" alt="" />
+    <div>{{ title }}</div>
+    <!--    <video-player :options="playerOptions" />-->
   </div>
 </template>
 
 <script lang="ts">
-export default {
+import { IVideo } from 'vkontakte-api'
+import Vue, { PropType } from 'vue'
+
+export default Vue.extend({
   name: 'Card',
   props: {
     video: {
-      type: Object,
+      type: Object as PropType<IVideo>,
       required: true,
     },
   },
 
   computed: {
-    subtitle() {
-      return this.video.subsitle
+    title(): string {
+      return this.video.title || this.video.subsitle
     },
-    imageUrl() {
-      return this.video?.image[1]?.url
+    imageUrl(): string {
+      return this.video?.image[0]?.url
     },
-    player() {
+    player(): string {
       return this.video.player
     },
+    // playerOptions() {
+    //   return {
+    //     controls: true,
+    //     poster: this.imageUrl,
+    //     src: {
+    //       withCredentials: false,
+    //       type: 'application/x-mpegurl',
+    //       src: this.player,
+    //     },
+    //   }
+    // },
   },
-}
+})
 </script>

@@ -21,8 +21,9 @@ export default Vue.extend({
 
   watch: {
     mainSearch(val) {
+      console.log(val)
       this.$vkApi.video
-        .search({ q: val, accessToken: this.accessToken })
+        .search({ q: val, accessToken: this.accessToken, sort: 2 })
         .then((r) => {
           this.$accessor.search.setSearchResult(r)
         })

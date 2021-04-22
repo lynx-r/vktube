@@ -6,14 +6,15 @@
 </template>
 
 <script lang="ts">
+import Vue from 'vue'
 import { SearchResult } from '~/plugins/vk-api/repo/VideoRepository'
 
-export default {
+export default Vue.extend({
   name: 'List',
   computed: {
     videos() {
       return this.$accessor.search.searchResult as SearchResult
     },
   },
-}
+})
 </script>

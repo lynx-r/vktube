@@ -1,10 +1,10 @@
 <template>
-  <ButtonIcon @click="$accessor.sidebar.toggle()">
+  <DefaultButtonIcon @click="$accessor.sidebar.toggle()">
     <fa :icon="['fa', 'bars']" class="text-gray-500" />
-  </ButtonIcon>
+  </DefaultButtonIcon>
 </template>
 <script>
 export default {
-  name: 'SidebarToggle',
+  name: 'DefaultSidebarToggle',
 }
 </script>

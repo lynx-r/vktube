@@ -10,6 +10,7 @@
 
 <script>
 export default {
+  name: 'DefaultButton',
   props: {
     round: {
       type: Boolean,
